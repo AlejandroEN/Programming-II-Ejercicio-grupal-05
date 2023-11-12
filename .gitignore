@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# User-defined
+cmake-build-debug/
+.idea/
+.clang-tidy
+out/
+.vs/
+CMakeSettings.json
