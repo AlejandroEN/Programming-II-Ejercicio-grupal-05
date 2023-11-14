@@ -2,37 +2,37 @@
 #define EJERCICIO_05_GRUPAL_BRAINZONES_HPP
 
 #include "brainZone.hpp"
-
+#include <iostream>
 using namespace std;
 
-class ChildhoodZone : protected BrainZone
+class ChildhoodZone : public BrainZone
 {
 public:
-    void printMemories() override;
+    string printMemories() override;
 };
 
-class AdolescentZone : protected BrainZone
+class AdolescentZone : public BrainZone
 {
 public:
-    void printMemories() override;
+    string printMemories() override;
 };
 
-class AdultZone : protected BrainZone
+class AdultZone : public BrainZone
 {
 public:
-    void printMemories() override;
+    string printMemories() override;
 };
 
-class OldZone : protected BrainZone
+class OldZone : public BrainZone
 {
 public:
-    void printMemories() override;
+    string printMemories() override;
 };
 
-class SubconsciousZone : protected BrainZone
+class SubconsciousZone : public BrainZone
 {
 public:
-    void printMemories() override;
+    string printMemories() override;
 };
 
 #endif //EJERCICIO_05_GRUPAL_BRAINZONES_HPP
