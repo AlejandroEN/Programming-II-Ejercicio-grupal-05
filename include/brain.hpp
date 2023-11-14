@@ -1,0 +1,9 @@
+#ifndef EJERCICIO_05_GRUPAL_BRAIN_HPP
+#define EJERCICIO_05_GRUPAL_BRAIN_HPP
+
+class Brain
+{
+
+};
+
+#endif //EJERCICIO_05_GRUPAL_BRAIN_HPP
