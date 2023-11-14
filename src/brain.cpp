@@ -8,6 +8,8 @@ AdultZone& Brain::getAdultZone() { return _adultZone; }
 
 OldZone& Brain::getOldZone() { return _oldZone; }
 
+SubconsciousZone& Brain::getSubconsciousZone() { return _subconsciousZone; }
+
 string Brain::getAllFormattedMemories()
 {
     string text = _childhoodZone.getFormattedMemories() + "\n" +

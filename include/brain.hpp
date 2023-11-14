@@ -10,6 +10,7 @@ private:
     AdolescentZone _adolescentZone;
     AdultZone _adultZone;
     OldZone _oldZone;
+    SubconsciousZone _subconsciousZone;
 
 public:
     // Getters
@@ -17,6 +18,7 @@ public:
     AdolescentZone& getAdolescentZone();
     AdultZone& getAdultZone();
     OldZone& getOldZone();
+    SubconsciousZone& getSubconsciousZone();
 
     // Methods
     string getAllFormattedMemories();

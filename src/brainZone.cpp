@@ -4,23 +4,10 @@ vector<string> BrainZone::getMemories() { return _memories; }
 
 void BrainZone::addMemory(const string &memory) { _memories.push_back(memory); }
 
-void BrainZone::removeMemory(int index, BrainZone *targetZone)
+void BrainZone::forgetMemory(int index, BrainZone *targetZone)
 {
-    if (index <= _memories.size() - 1) { return; }
-
-    for (int i = 0; i < _memories.size(); i++)
-    {
-        if (i == index)
-        {
-            string memory = _memories[i];
-            targetZone->addMemory(memory);
-            memory.erase(memory.begin() + i);
-        }
-    }
+    targetZone->addMemory(_memories[index]);
+    _memories.erase(_memories.begin() + index);
 }
 
-string BrainZone::getMemory(int index)
-{
-    if (index <= _memories.size() - 1) { return ""; }
-    return _memories[index];
-}
+string BrainZone::getMemory(int index){ return _memories[index]; }

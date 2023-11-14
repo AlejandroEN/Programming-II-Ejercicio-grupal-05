@@ -23,5 +23,21 @@ int main()
     brain.getOldZone().addMemory("Recuerdo de la vejez 3");
     brain.getOldZone().addMemory("Recuerdo de la vejez 4");
 
+    // Imprimimos todas las memorias de todas las zonas
     cout << brain.getAllFormattedMemories() << endl;
+
+    // Imprimimos un recuerdo en específico de la zona de la niñez
+    cout << brain.getChildhoodZone().getMemory(1) << endl << endl;
+
+    // Se olvida una memoria de la zona de la niñez
+    brain.getChildhoodZone().forgetMemory(0, &brain.getSubconsciousZone());
+
+    // Volvemos a imprimir las memorias de la zona de la niñez para comprobar que se haya olvidado
+    cout << brain.getChildhoodZone().getFormattedMemories() << endl;
+
+    // Se vuelve a recordar el recuerdo que se olvidó de la zona de la niñez
+    brain.getSubconsciousZone().forgetMemory(0, &brain.getChildhoodZone());
+
+    // Volvemos a imprimir las memorias de la zona de la niñez para comprobar que se haya recordado
+    cout << brain.getChildhoodZone().getFormattedMemories() << endl;
 }

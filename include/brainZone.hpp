@@ -19,7 +19,7 @@ public:
     // Methods
     void addMemory(const string &memory);
     string getMemory(int index);
-    void removeMemory(signed int index, BrainZone *targetZone);
+    void forgetMemory(signed int index, BrainZone *targetZone);
     virtual string getFormattedMemories() = 0;
 };
 
