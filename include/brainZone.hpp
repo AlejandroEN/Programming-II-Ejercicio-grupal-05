@@ -18,8 +18,9 @@ public:
 
     // Methods
     void addMemory(const string &memory);
+    string getMemory(int index);
     void removeMemory(signed int index, BrainZone *targetZone);
-    virtual string printMemories() = 0;
+    virtual string getFormattedMemories() = 0;
 };
 
 #endif //EJERCICIO_05_GRUPAL_BRAIN_ZONE_HPP

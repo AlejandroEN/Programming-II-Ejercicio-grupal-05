@@ -1,25 +1,19 @@
 #include "../include/brain.hpp"
 
-Brain::Brain()
+ChildhoodZone& Brain::getChildhoodZone() { return _childhoodZone; }
+
+AdolescentZone& Brain::getAdolescentZone() { return _adolescentZone; }
+
+AdultZone& Brain::getAdultZone() { return _adultZone; }
+
+OldZone& Brain::getOldZone() { return _oldZone; }
+
+string Brain::getAllFormattedMemories()
 {
-    _childhoodZone = ChildhoodZone();
-    _adolescentZone = AdolescentZone();
-    _adultZone = AdultZone();
-    _oldZone = OldZone();
-}
+    string text = _childhoodZone.getFormattedMemories() + "\n" +
+                  _adolescentZone.getFormattedMemories() + "\n" +
+                  _adultZone.getFormattedMemories() + "\n" +
+                  _oldZone.getFormattedMemories();
 
-ChildhoodZone Brain::getChildhoodZone() { return _childhoodZone; }
-
-AdolescentZone Brain::getAdolescentZone() { return _adolescentZone; }
-
-AdultZone Brain::getAdultZone() { return _adultZone; }
-
-OldZone Brain::getOldZone() { return _oldZone; }
-
-void Brain::printAllMemories()
-{
-    _childhoodZone.printMemories();
-    _adolescentZone.printMemories();
-    _adultZone.printMemories();
-    _oldZone.printMemories();
+    return text;
 }

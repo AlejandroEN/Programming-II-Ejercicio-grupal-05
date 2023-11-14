@@ -1,6 +1,6 @@
 #include "../include/brainZones.hpp"
 
-string ChildhoodZone::printMemories()
+string ChildhoodZone::getFormattedMemories()
 {
     string text = "Recuerdos de la zona de la niñez: \n";
 
@@ -14,7 +14,7 @@ string ChildhoodZone::printMemories()
     return text;
 }
 
-string AdolescentZone::printMemories()
+string AdolescentZone::getFormattedMemories()
 {
     string text = "Recuerdos de la zona adolescente: \n";
 
@@ -26,7 +26,7 @@ string AdolescentZone::printMemories()
     return text;
 }
 
-string AdultZone::printMemories()
+string AdultZone::getFormattedMemories()
 {
     string text = "Recuerdos de la zona de la adultez: \n";
 
@@ -38,7 +38,7 @@ string AdultZone::printMemories()
     return text;
 }
 
-string OldZone::printMemories()
+string OldZone::getFormattedMemories()
 {
     string text = "Recuerdos la zona de la vejez: \n";
 
@@ -50,7 +50,7 @@ string OldZone::printMemories()
     return text;
 }
 
-string SubconsciousZone::printMemories()
+string SubconsciousZone::getFormattedMemories()
 {
     string text = "Recuerdos de la zona del subconsciente: \n";
 

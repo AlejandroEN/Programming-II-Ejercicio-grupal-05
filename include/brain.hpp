@@ -12,16 +12,14 @@ private:
     OldZone _oldZone;
 
 public:
-    Brain();
-
     // Getters
-    ChildhoodZone getChildhoodZone();
-    AdolescentZone getAdolescentZone();
-    AdultZone getAdultZone();
-    OldZone getOldZone();
+    ChildhoodZone& getChildhoodZone();
+    AdolescentZone& getAdolescentZone();
+    AdultZone& getAdultZone();
+    OldZone& getOldZone();
 
     // Methods
-    void printAllMemories();
+    string getAllFormattedMemories();
 };
 
 #endif //EJERCICIO_05_GRUPAL_BRAIN_HPP
