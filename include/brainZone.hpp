@@ -7,13 +7,12 @@
 
 using namespace std;
 
-class BrainZone {
+class BrainZone
+{
 protected:
-    vector<string> memories;
+    vector<string> _memories;
 
 public:
-    BrainZone();
-
     // Getters
     vector<string> getMemories();
 

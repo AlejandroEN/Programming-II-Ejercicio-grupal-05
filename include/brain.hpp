@@ -6,10 +6,10 @@
 class Brain
 {
 private:
-    ChildhoodZone childhoodZone;
-    AdolescentZone adolescentZone;
-    AdultZone adultZone;
-    OldZone oldZone;
+    ChildhoodZone _childhoodZone;
+    AdolescentZone _adolescentZone;
+    AdultZone _adultZone;
+    OldZone _oldZone;
 
 public:
     Brain();

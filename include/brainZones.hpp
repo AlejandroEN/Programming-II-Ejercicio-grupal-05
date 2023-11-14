@@ -2,8 +2,6 @@
 #define EJERCICIO_05_GRUPAL_BRAINZONES_HPP
 
 #include "brainZone.hpp"
-#include <iostream>
-using namespace std;
 
 class ChildhoodZone : public BrainZone
 {
